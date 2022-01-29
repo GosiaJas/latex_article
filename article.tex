@@ -1,0 +1,146 @@
+\documentclass{article}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{latexsym}
+
+\title{Praca dodatkowa o wszystkim i o niczym}
+\author{Gosia Jasińska}
+\date{29.01.2022}
+
+\begin{document}
+		
+\maketitle
+
+\newpage
+\begin{abstract}
+	W tym dokumencie zawarte są różne rzeczy. Praca ta ma na celu zaprezentować jak najwięcej funkcji, które są możliwe w dokumencie w klasie article. Miłej lektury :)
+\end{abstract}
+
+\newpage
+\tableofcontents
+\listoffigures
+\listoftables
+
+\newpage
+\section{Rozdział 1}
+Ten rozdział poświęcony jest królowej nauk. Zawarte są różne wzory matematyczne, aby jak najlepiej poznać właściwowości języka \LaTeX
+
+\subsection{Symbol Newtona }
+Newton to był bardzo fajny gościu. Oprócz tego, że spadło mu na głowę jabłko, był on też jedym z wybitnijeszych naukowców jakich znała ludzkość. Sprawił on też, że matematyka jest jeszcze ciekawsza dodając do niej ukochany przez wszystkich  współczynnik dwumianowy: 
+
+\begin{equation}
+	{n \choose k}=\frac{n!}{k!(n-k)!}
+\end{equation}
+
+gdzie 0 $\le k $$\le$  n
+
+\subsection{Macierz }
+Nie za bardzo przepadam za macierzami, ale chciałam jedną tu uwzględnić. Tutaj przykład prostej macierzy:
+
+\begin{displaymath}
+	\left[\begin{array}{ccc}
+		1 & 2 & 3 \\
+		4 & 5 & 6 \\
+		7 & 8 & 9 
+	\end{array}\right] 
+\end{displaymath}
+	
+Przykład ten nie jest zbyt skąplikowany, ale wiadomo o co chodziło
+	
+\subsection{Więcej Matematyki }
+A tu jeszcze kilka smaczków, które pokazują tryb matematyczny języka \LaTeX. Matmy nigdy nie za dużo...
+\begin{itemize}
+	\item pierwiastki
+	$\sqrt{7}$, $\sqrt{2}$, $3\sqrt{7}$, $\sqrt{57}$, $12\sqrt{13}$
+	\item ułamki
+	$\frac{2}{3}$, $\frac{a}{b}$, $-\frac{1}{12}$, $\frac{x+y}{z}$, $-\frac{\pi}{17}$
+	\item przedziały
+	$(-3,2]$, $(-\infty,\infty)$, $[-31.5, \pi )$
+	\item potęgi 
+	$2^{10}$, $3^{x}$, $0.1^{-2}$, $100^{0}$, $q^{2p}$
+	
+\end{itemize}
+
+
+\subsection{Suma}
+No i wisienką na matematycznym torcie, jest sigma. W tym wypadku jest to rozbudowana sigma. Jak ktoś chce to możecie sobię policzyć tą sumę dla dowolnego n, tylko pamiętajcie, że n $\ge 1.
+
+\begin{displaymath}
+	\sum_{i=1}^n\sum_{j=1}^ii*j^{i} 
+\end{displaymath} 
+
+\newpage
+\section{Rozdział 2}
+
+\subsection{Formatowanie}
+ 
+W tej sekcji zawarte są przykładowe  style formatowania tekstu: \\
+
+
+\textbf{pogrubienie}
+
+\textit{kursywa}
+
+\underline{podkreślenie}
+
+\texttt{stała szerokość}
+
+\textsf{czcionka bezszeryfowa} \\
+
+Czcionki można też mieszać oraz zmieniać im rozmiar: \\
+
+\textbf{\textit{\Huge{Jest wiele możliwości}}}
+
+\subsection{Zdjęcia}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat vulputate felis a volutpat. Aliquam pretium magna eu arcu suscipit efficitur. Suspendisse id suscipit lorem, id efficitur sapien. Quisque rhoncus venenatis eros nec sodales. Fusce sodales scelerisque ligula vitae pharetra. Donec et vestibulum odio, blandit iaculis arcu. Pellentesque ac vulputate sapien. Donec malesuada mi nec imperdiet hendrerit. Cras eget pretium ligula. In nec porta ipsum, vel vehicula orci. Aliquam ac sem tincidunt, lacinia lacus et, porta sapien.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.75\textwidth]{chow chow.jpg} 
+	\caption{\cite{chow chow} Chow Chowy są super}
+	\label{chow chow}
+\end{figure}
+
+Integer nec est felis. Nullam congue nulla sit amet ligula iaculis, nec egestas magna laoreet. Curabitur vel iaculis metus. Morbi tincidunt lectus vitae congue suscipit. Morbi pellentesque leo dictum tellus cursus, sit amet ullamcorper enim ornare. Sed quis gravida orci. In a orci congue, ullamcorper lorem eu, dapibus sem. Integer malesuada ex non aliquam dictum. Donec ac ante vitae ex scelerisque tempor ac gravida quam. \\
+
+ Etiam ut pharetra massa, nec dignissim ligula. Pellentesque vulputate consectetur leo. Vivamus blandit ut ex a scelerisque. Nullam placerat pulvinar sapien sed scelerisque. Nulla egestas, est ut lobortis iaculis, odio sapien sodales odio, quis tempor ligula leo eu tortor. Donec in dapibus lorem, eu imperdiet mauris. Vivamus mollis vitae tellus nec molestie. Nullam eros ante, malesuada vel dictum eget, ullamcorper at arcu. In lectus est, fringilla quis accumsan ac, feugiat eget mauris. Vestibulum cursus varius mi, vitae tincidunt nibh accumsan eget. Donec vestibulum malesuada rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed cursus arcu diam, tincidunt luctus leo semper quis.
+ 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.75\textwidth]{corgi.jpg} 
+	\caption{\cite{corgi} Corgi też fajne}
+	\label{corgi}
+\end{figure}
+
+Quisque in ornare tortor. Suspendisse lectus magna, lobortis at erat vitae, pharetra fermentum metus. Aenean et dui rhoncus, dictum massa facilisis, ultrices sem. Morbi pulvinar dictum turpis quis varius. Donec aliquam lorem nunc, a venenatis turpis auctor in. Fusce et elementum augue. Morbi condimentum ante at lacus iaculis, quis ultrices tortor egestas. Morbi eget mollis lacus. Aliquam erat volutpat. Vivamus bibendum, nibh nec rhoncus mollis, orci dolor dignissim lorem, ut commodo sem turpis ut urna. Fusce at magna eros. Nulla facilisi. Nullam sodales ex a sapien egestas, non imperdiet lorem imperdiet. 
+
+\newpage
+\subsection{Tabela}
+
+Poniżej przedstawiona jest tabela. Znajdują się w niej losowe dane. Tabela ta zawiera kolumny imię, nazwisko i wiek.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{imię} & \textbf{nazwisko} & \textbf{wiek} \\ \hline
+		Jan & Kowalski & 34 \\ \hline
+		Anna & Malinowska & 37 \\ \hline
+		Paweł & Nowak & 46 \\ \hline
+		Adam & Laskowski & 21 \\ \hline
+	\end{tabular}
+	\caption{Losowe dane}
+\end{table}
+
+\newpage
+\begin{thebibliography}{2}
+	\bibitem{chow chow}
+	Chow-chow to rasa pochodząca z Chin. Znana jest jako pies z niebieskim językiem. Przez bujną grzywę, okrągłe uszy i krótką kufę przypomina lwa lub niedźwiadka.
+	\bibitem{corgi}
+	Corgi to małe, krnąbrne i wesołe psy o lisim wyglądzie. Podbiły serca Brytyjczyków już dawno temu, jednak w Polsce nadal uchodzą za mało znaną i rzadką rasę.
+\end{thebibliography}
+
+
+\end{document}
